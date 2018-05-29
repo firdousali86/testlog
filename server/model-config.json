@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongoDBDS",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoDBDS",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDBDS",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongoDBDS",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongoDBDS",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "post": {
+    "dataSource": "mongoDBDS",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "userWorkHistory": {
+    "dataSource": "mongoDBDS",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "userParam": {
+    "dataSource": "mongoDBDS",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Email": {
+    "dataSource": "Email"
+  },
+  "logResult": {
+    "dataSource": "mongoDBDS",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

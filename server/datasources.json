@@ -1,0 +1,33 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDBDS": {
+    "host": "ds139890.mlab.com",
+    "port": 39890,
+    "database": "logerem",
+    "username": "logeremuser",
+    "password": "qweasd123",
+    "name": "mongoDBDS",
+    "user": "logeremuser",
+    "connector": "mongodb"
+  },
+  "Email": {
+    "name": "Email",
+    "defaultForType": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "cubix.autoconnect@gmail.com",
+          "pass": "cuautoconnect"
+        }
+      }
+    ]
+  }
+}
